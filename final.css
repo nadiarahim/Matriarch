@@ -191,7 +191,7 @@ overflow-y: hidden;
               }
           }
 
-          .changingcolor h1 {
+          .changingcolor .middle {
             color: black;
             text-align: center;
             font-family: Apple Chancery ;
