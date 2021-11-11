@@ -1,15 +1,23 @@
 /* sliding pages */
 html {
   box-sizing: border-box;
+  height:auto
 }
+
+body {
+height: 100vh;
+overflow-y: hidden;
+}
+
 *, *:before, *:after {
   box-sizing: inherit;
 }
 
 .slide {
   width: 100vw;
-  height: 100vh;
+  height: 100vh; 
 }
+
 .wrapper {
   display: flex;
   flex-direction: row;
@@ -81,67 +89,67 @@ html {
 
             .title p#image-paragraph #image1 {
               top: 30px;
-              left: 30px;
+              right: 40px;
               -webkit-transition-delay: 0s; 
             }
 
             .title p#image-paragraph #image2 {
-              top: 30px;
-              left: 280px;
+              top: 325px ;
+              left: 40px;
               -webkit-transition-delay: .2s;
             }
 
             .title p#image-paragraph #image3 {
               top: 30px;
-              right: 280px;
+              left: 315px;
               -webkit-transition-delay: .4s;
             }
 
             .title p#image-paragraph #image4 {
-              top: 200px;
-              left: 280px;
+              top: 325px;
+              left: 315px;
               -webkit-transition-delay: .6s;  
             }
 
             .title p#image-paragraph #image5 {
-              top: 30px;
-              right: 30px;
+              bottom: 30px;
+              left: 40px;
               -webkit-transition-delay: 0s;
             }
 
-            .title p#image-paragraph #image7 {
-              bottom: 30px;
-              left: 280px;
+            .title p#image-paragraph #image6 {
+              top: 30px;
+              right: 315px;
               -webkit-transition-delay: .2s;
             }
 
+            .title p#image-paragraph #image7 {
+              top: 325px;
+              right: 315px;
+              -webkit-transition-delay: .6s;  
+            }
+
             .title p#image-paragraph #image8 {
-              top: 30px;
-              left: 550px;
+              top: 325px;
+              right: 40px;
               -webkit-transition-delay: .6s;  
             }
 
             .title p#image-paragraph #image9 {
-              top: 200px;
-              left: 550px;
+              bottom: 30px;
+              right: 640px;
               -webkit-transition-delay: .6s;  
             }
 
-            .title p#image-paragraph #image10 {
-              bottom: 30px;
-              left: 30px;
+            .title p#image-paragraph #image10 {    
+              top: 30px;
+              right: 640px;
               -webkit-transition-delay: .6s;  
             }
 
             .title p#image-paragraph #image11 {
-              bottom: 30px;
-              right: 280px;
-              -webkit-transition-delay: .6s;  
-            }
-
-            .title p#image-paragraph #image12 {
-              bottom: 30px;
-              right: 30px;
+              top: 30px;
+              left: 40px;
               -webkit-transition-delay: .6s;  
             }
 
@@ -214,7 +222,7 @@ html {
           .changingcolor div.middle {
               margin: 0;
               position: absolute;
-              top: 50%;
+              top: 40%;
               left: 150%;
               margin-right: -50%;
               transform: translate(-50%, -50%) }
@@ -227,24 +235,22 @@ html {
               margin-right: -50%;
               transform: translate(-50%, -50%) 
           }
-          .changingcolor #main {
-            width: 480px;
+          .changingcolor .main {
+            width: 780px;
             height: 480px;
             margin: 0;
             position: absolute;
-            top: 64%;
-            left: 133%;
+            top: 55%;
+            left: 121%;
             margin-right: -50%;
             transform: translate(-50%, -50%) 
-            border: 1px solid white;
+            border: 1px solid black;
             display: flex;
-            flex-wrap: wrap;
+            flex-wrap: wrap; 
+            text-align-last: center;
           }
 
-          .changingcolor #main div {
-            width: 110px;
-            height: 110px;
-          }
+
 
 
 
@@ -274,7 +280,7 @@ html {
           width: 100%;
           height: 100%;
           margin: 0;
-          line-height: 10px;
+          line-height: 5px;
           text-align: center;
           font-family: Arial Black;
           font-size:14px;
@@ -283,9 +289,9 @@ html {
           -webkit-transform:translateX(100%); 
           transform:translateX(100%);
           /* Apply animation to this element */ 
-          -moz-animation: scroll-left 10s linear infinite;
-          -webkit-animation: scroll-left 10s linear infinite;
-          animation: scroll-left 10s linear infinite;
+          -moz-animation: scroll-left 12s linear infinite;
+          -webkit-animation: scroll-left 12s linear infinite;
+          animation: scroll-left 12s linear infinite;
           }
           /* Move it (define the animation) */
           @-moz-keyframes scroll-left {
@@ -316,6 +322,9 @@ html {
           .bio .text1{
             font-family:Avenir Next;
             font-size: 14px;
+            width: 500px;
+            padding: 0px;
+            margin: 20px;
           }
 
           .bio div {
@@ -340,6 +349,11 @@ html {
              font-family:Avenir Next;
              font-size: 14px;
           }
+            
+
+                   
+
+
 
 
 
@@ -361,6 +375,7 @@ html {
             margin: auto;
             width: 300px;
             height: 250px;
+            top: 25px;
           }
           .hands .photo-stack > p {
             position: absolute;
@@ -489,13 +504,12 @@ html {
 /* PAGE FIVE / Layla Bio page */
             /* scrolling text */
             .layla .scroll-left {
-            height: 50px; 
-            overflow: hidden;
+            height: 100px; 
             position: relative;
             }
             .layla .scroll-left p {
             position:absolute; 
-            top:2px; 
+            top:30px; 
             width: 100%;
             height: 100%;
             margin: 0;
@@ -509,9 +523,9 @@ html {
             -webkit-transform:translateX(100%); 
             transform:translateX(100%);
             /* Apply animation to this element */ 
-            -moz-animation: scroll-left 10s linear infinite;
-            -webkit-animation: scroll-left 10s linear infinite;
-            animation: scroll-left 10s linear infinite;
+            -moz-animation: scroll-left 12s linear infinite;
+            -webkit-animation: scroll-left 12s linear infinite;
+            animation: scroll-left 12s linear infinite;
             }
             /* Move it (define the animation) */
             @-moz-keyframes scroll-left {
@@ -537,13 +551,19 @@ html {
             .layla .p2 {
               font-family: Arial Black;
               font-size: 14px
-              color: white;
+              color: #eed1ba;
+              width: 650px;
+              padding: 0px;
+              margin: 20px;          
             }
 
             .layla .text1{
               font-family:Avenir Next;
               font-size: 14px;
               color: #eed1ba;
+              width: 500px;
+              padding: 0px;
+              margin: 20px;
             }
 
             .layla div {
@@ -562,7 +582,7 @@ html {
             .layla .bottomtextDiv {
              position: relative;
              left: 0;
-             bottom: -30%;
+             bottom: -10%;
              width: 100%;
              left: 200px;
              color: #eed1ba;
@@ -570,7 +590,7 @@ html {
              font-size: 14px;
             }
 
-
+             
 
 
 
